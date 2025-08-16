@@ -24,4 +24,24 @@ def login():
   return None
 
 def sacar(conta): 
-  pr
+  print("\n--- Sacar ---")
+  valor = float(input("Valor do saque: R$ "))
+  taxa = 2.5
+  if conta["saldo"] >= valor + taxa: 
+      conta["saldo"] -= valor + taxa
+      print (f"Saque de R${valor:.2f} realiado. ("Taxa de R${taxa:.2f)\n")
+  else:
+    print("Saldo insufiente.\n")
+
+def depositar(conta):
+  print("\n--- Depósito ---")
+  valor = float(input("Valor do depósito: R$ "))
+  conta["saldo"] += valor
+  print(f"Depósito de R${valor:.2f} realizado!\n")
+
+def transferir(conta_origem):
+  print("\n--- Transferência ---")
+  destino = input("Conta de destino: ")
+  valor = float(input("Valor de transferência: R$ "))
+  taxa = 1.0
+  
