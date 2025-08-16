@@ -22,4 +22,6 @@ def login():
         return conta
   print("Conta ou senha inválida. \n")
   return None
-  
+
+def sacar(conta): 
+  pr
