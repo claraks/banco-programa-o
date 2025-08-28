@@ -5,7 +5,7 @@ def criar_conta():
   nome = input("Nome Completo: ")
   numero = input("Número da Conta: ")
   senha = input("Senha: ")
-  saldo = float(input("Depósito inicial: R$ ")
+  saldo = float(input("Depósito inicial: R$ "))
 
   conta = {"nome": nome, "numero": numero, "senha": senha, "saldo": saldo}
   contas.append(conta)
@@ -17,7 +17,7 @@ def login():
   senha = input("Senha: ")
 
   for conta in contas:
-    if conta["numero] == numero and conta["senha"]== senha:
+    if conta["numero"] == numero and conta["senha"]== senha:
         print(f"\n  Bem-vindo(a), {conta['nome']}!\n)
         return conta
   print("Conta ou senha inválida. \n")
@@ -35,7 +35,7 @@ def criar_conta():
   nome = input("Nome Completo: ")
   numero = input("Número da Conta: ")
   senha = input("Senha: ")
-  saldo = float(input("Depósito inicial: R$ ")
+  saldo = float(input("Depósito inicial: R$ "))
 
   conta = {"nome": nome, "numero": numero, "senha": senha, "saldo": saldo}
   contas.append(conta)
@@ -47,7 +47,7 @@ def login():
   senha = input("Senha: ")
 
   for conta in contas:
-    if conta["numero] == numero and conta["senha"]== senha:
+    if conta["numero"] == numero and conta["senha"] == senha:
         print(f"\n  Bem-vindo(a), {conta['nome']}!\n)
         return conta
   print("Conta ou senha inválida. \n")
@@ -59,7 +59,7 @@ def sacar(conta):
   taxa = 2.5
   if conta["saldo"] >= valor + taxa: 
       conta["saldo"] -= valor + taxa
-      print (f"Saque de R${valor:.2f} realiado. ("Taxa de R${taxa:.2f)\n")
+      print(f"Saque de R${valor:.2f} realizado. (Taxa de R${taxa:.2f})\n")
   else:
     print("Saldo insufiente.\n")
 
@@ -74,7 +74,7 @@ def transferir(conta_origem):
 
 def criar_conta():
   print("\n--- Criar Conta ---")
-  nome =input (Nome completo: )
+  nome =input ("Nome completo: ")
   numero = input ("Número da conta: ")
   senha = input ("Senha: ")
   saldo = float(input("Depósito inicial: R$ "))
@@ -89,8 +89,8 @@ def login():
   senha = input("Senha: ") 
 
   for conta in contas:
-    if conta ["numero"] == nmero and conta ["senha"] == senha:
-      print(f"\nBem-vindo(a), {conta['nome']!\n")
+    if conta ["numero"] == numero and conta ["senha"] == senha:
+      print(f"\nBem-vindo(a), {conta['nome']}!\n")
       return conta
     print("Conta ou senha inválida.\n")
     return None
@@ -114,7 +114,7 @@ def login():
     def transferir (conta_origem):
       print ("\n--- Transferência ---")
     destino = input("Conta de destino: ")
-     valor = float(input("Valor da transferência: ")
+     valor = float(input("Valor da transferência: "))
      taxa = 1.0
 
      for conta in contas:
@@ -156,7 +156,7 @@ def login():
           print ("--- Menu da conta ---")
           print ("1. Sacar")
           print ("2. Depositar")
-          print ("3. Trasferir")
+          print ("3. Transferir")
           print ("4. Ver saldo")
           print ("5. Sair")
         opcao = input ("Escolha : ")
@@ -179,7 +179,7 @@ def login():
                  print ("--- Menu Principal ---")
   if conta["saldo"] >= valor + taxa: 
       conta["saldo"] -= valor + taxa
-      print (f"Saque de R${valor:.2f} realiado. ("Taxa de R${taxa:.2f)\n")
+      print (f"Saque de R${valor:.2f} realiado. (Taxa de R${taxa:.2f)\n")
   else:
     print("Saldo insufiente.\n")
 
