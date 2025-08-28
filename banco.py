@@ -1,3 +1,5 @@
+contas = []
+
 def criar_conta():
     print("\n--- Criar Conta ---")
     nome = input("Nome Completo: ")
